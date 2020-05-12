@@ -1,21 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 body{
     background-image: url('https://cdn.pixabay.com/photo/2015/11/07/11/02/milky-way-1030765_960_720.jpg');
     background-size: auto 150vh;
-    font-family: Arial;
+    font-family: 'Lucida Console, Regular';
     height: 350vh;
-    
+    font-size: 20px;
+}
+/* se a tela tiver pelo menos 400 px vai carregar esses estlos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
   }
+}
+
+    header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
   .menu {
-    background-color: white;
+    background-color: rgb(59, 59, 146);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    
   }
   .menu ul{
     display: flex;
-    justify-content: space-around 
+    justify-content: space-around;
+    background-color: blue;
   }
   .menu li {
     list-style: none;
   }
-  
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+    
+
+  }
   a {
     text-decoration: none;
     color: black;
@@ -23,12 +53,27 @@ body{
   
   a:hover {
     text-decoration: underline;
+    outline-style: solid;
+    font-weight: bold;
   }
   .sub-titulo,
   .titulo {
     text-align: center;
-    color: whitesmoke;
+    color: whitesmoke
   }
   .sub-titulo {
     font-style: italic;
+  }
+  .port {
+    color: whitesmoke;
+  }
+  .img-portfolio {
+    height: 175px;
+    width: 225px;
+  }
+  figcaption {
+    color: whitesmoke;
+  }
+  section {
+    text-align: center;
   }
